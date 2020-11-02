@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Playstore</title>
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row top-bar">
+            <div class="col-md-4">
+                <h1>The Playstore</h1>
+            </div>
+            <div class="col-md-4 offset-md-4">
+                <form class="form-inline mt-3 d-flex justify-content-end" method="GET" action="/search">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" id="search" name="search" placeholder="Search here" required>
+                    </div>
+                        <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+
+                {{{body}}}
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
